@@ -1,0 +1,205 @@
+/* Nuestro menu en pocision pegajosa ----------------------------------------*/
+
+body {
+    margin: 2;
+    font-family: Arial;
+}
+
+ul {
+    list-style-type: none;
+
+    padding: 1px;
+    border: 3px solid #8a888871;
+    background-color: rgb(20, 20, 20);
+    position: sticky;
+    top: 0;
+    transition-duration: 0.2s;
+}
+
+li {
+    /* float: left; */
+    display: inline;
+    border-right: 1px solid #bbb;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.active {
+    background-color: green;
+}
+
+/* Formulario de busqueda ----------------------------------------*/
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    margin: 5px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 1.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+    background-color: lightgrey;
+}
+
+/* Galería de imágenes sensible utilizando Flexbox --------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* font-family: Arial; */
+    background-color: white;
+}
+
+div.polaroid {
+    width: 15%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+
+.header {
+    text-align: center;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    border-radius: 6px;
+    margin: 8px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Crea 4 columnas iguales que se sientan una al lado de la otra*/
+.column {
+    flex: 25%;
+    max-width: 35%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+div.container {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: 3px solid #8a888871;
+    /* border-radius: 6px; */
+}
+
+/* Diseño sensible: hace un diseño de dos columnas en lugar de 4 columnas  */
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Diseño receptivo: Hace que las 2 columnas se apilen
+     una sobre la otra en lugar de una al lado de la otra */
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/*  boton animado dentro de la imagen --------------------------------------*/
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.container .button {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    background-color: #68af4c;
+    color: black;
+    margin: 5px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(240, 239, 239);
+}
+
+.button span {
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 35px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0.5;
+}
+
+/* Pie de pagina --------------------------------------*/
+
+.footer {
+    background-image: url("fondo.piepag.png");
+    color: #050f09;
+    padding: 3px;
+    text-align: center;
+    margin-top: 10px;
+    border: 3px solid white;
+    font-size: 120%;
+}
+
+#rcorners3 {
+    border-radius: 15px 15px 15px 15px;
+    background: url(fondo.piepag.png);
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 10px;
+    margin: 3;
+}

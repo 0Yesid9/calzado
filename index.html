@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es-CO"  dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Optimus_Regeneratione</title>
+    <title>particles</title>
+    <link rel="stylesheet" type="text/css" href="css.optimus.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+      html {
+        background: url(fondo.png) no-repeat center fixed;
+        background-size: cover;
+      }
+    </style>
+
+    <!--=================================
+     Nuestro menu en pocision pegajosa
+    ==================================-->
+    <!-- <style>
+        body {
+          margin: 2;
+          font-family: Arial;
+        }
+      ul {
+        list-style-type: none;
+      
+        padding: 1px;
+        /* border: 3px solid #8a888871; */
+        background-color: rgb(20, 20, 20);
+        position: sticky;
+        top: 0;
+        transition-duration: 0.2s;
+      }
+
+      li {
+        /* float: left; */
+        display: inline;
+        border-right:1px solid #bbb;
+      }
+      
+      li a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 20px 20px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: rgb(247, 243, 243);
+      }
+      li.dropdown {
+        display: inline-block;
+      }
+      .active {
+        background-color: green;
+      }
+    </style> -->
+
+      <!--=================================
+        Formulario de busqueda
+      ==================================-->
+
+    <style>
+     input[type=text] {
+       width: 130px;
+       box-sizing: border-box;
+       border: 2px solid #ccc;
+       border-radius: 8px;
+       font-size: 15px;
+       margin: 5px;
+       background-color: white;
+       background-image: url('searchicon.png');
+       background-position: 10px 10px;
+       background-repeat: no-repeat;
+       padding: 12px 20px 12px 40px;
+       -webkit-transition: width 0.4s ease-in-out;
+       transition: width 1.4s ease-in-out;
+      }
+
+      input[type=text]:focus {
+        width: 100%;
+        background-color: lightgrey;
+      }
+    </style>
+      <!--=============================================
+        Galería de imágenes sensible utilizando Flexbox
+      ==============================================-->
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+  
+    body {
+      margin: 0;
+      /* font-family: Arial; */
+      background-color: white;
+    }
+  
+    div.polaroid {
+      width: 15%;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 25px;
+    }
+  
+    .header {
+      text-align: center;
+      padding: 10px;
+      color: rgb(158, 6, 6);
+      background-color: white;
+      border-radius: 6px;
+      margin: 8px;
+    }
+  
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+  
+    /* Crea 3 columnas iguales que se sientan una al lado de la otra*/
+    .column {
+      flex: 25%;
+      max-width: 35%;
+      padding: 0 4px;
+    }
+  
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+    }
+  
+    div.container {
+      text-align: center;
+      padding: 10px 20px;
+      background-color: white;
+      color: black;
+      border: 3px solid #8a888871;
+      /* border-radius: 6px; */
+    }
+  
+    /* Diseño sensible: hace un diseño de dos columnas en lugar de 4 columnas  */
+    @media (max-width: 800px) {
+      .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+  
+    /* Diseño receptivo: Hace que las 2 columnas se apilen
+     una sobre la otra en lugar de una al lado de la otra */
+    @media (max-width: 600px) {
+      .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+  
+   <!--=================================
+       boton animado dentro de la imagen
+    ==================================-->
+
+    <style>
+      .container {
+        position: relative;
+        width: 100%;
+      }
+
+      .container .button {
+        position: absolute;
+        top: 80%;
+        left: 20%;
+        background-color: #68af4c;
+        color: black;
+        margin: 5px;
+        font-size: 20px;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        color: rgb(240, 239, 239);
+      }
+
+      .button span {
+        position: relative;
+        transition: 0.5s;
+      }
+
+      .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+
+      .button:hover span {
+        padding-right: 35px;
+      }
+
+      .button:hover span:after {
+        opacity: 1;
+        right: 0.5;
+      }
+    </style>
+
+
+    </style>
+      <!--=================================
+          Pie de pagina
+      ==================================-->
+
+    <style>
+      .footer {
+        background-image: url("fondo.piepag.png");
+        color: #050f09;
+        padding: 3px;
+        text-align: center;
+        margin-top: 10px;
+        border: 3px solid white;
+        font-size: 120%;
+      }
+      #rcorners3 {
+        border-radius:  15px 15px 15px 15px;
+        background: url(fondo.piepag.png);
+        background-position: left top;
+        background-repeat: repeat;
+        padding: 10px;
+        margin: 3;
+      }
+    </style>
+  </head>
+  
+  <body style="background-image:url('fondo.png')"></body>
+
+
+      <!--========================================================
+             A continuación nuestro Menu con CSS, pocision pegajosa
+          ====================================================-->      
+      <!-- <body>
+        <ul>
+          <li><a class="active" href="#Home">Home</a></li>
+          <li style="float:right"><a href="#Nosotros">Nosotros</a></li>
+          <li><a href="#Dama">Dama</a></li>
+          <li><a href="#Caballeros">Caballero</a></li>
+          <li style="float:right"><a class="active" href="#Instagram" float: left;>Instagram</a></li>
+        </ul>
+      </body> -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">HOME</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">CABALLERO <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Running</a></li>
+          <li><a href="#">Training</a></li>
+          <li><a href="#">Urbano</a></li>
+        </ul>
+      </li>
+      <li class="dropdpwn"><a class="dropdown-toggle" data-toggle="dropdown" href="#">DAMA <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Running</a></li>
+          <li><a href="#">Training</a></li>
+          <li><a href="#">Urbano</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">NIÑOS <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Running</a></li>
+          <li><a href="#">Training</a></li>
+          <li><a href="#">Urbano</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-phone"></span>Instagram</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span>Nosotros</a></li>
+    </ul>
+      <form class="navbar-form navbar-left" action="/action_page.php">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" name="search">
+        </div>
+        <button type="submit" class="btn btn-default">
+          <i class="glyphicon glyphicon-search"></i>
+        </button>     
+      </form>
+  </div>
+</nav>
+
+    <!--=================================
+     Nuestras particulas.js
+    ==================================-->
+    <body>
+      <div id="particles-js"></div>
+
+      <style>
+        body {
+            background:#817f7f;
+          }
+          #particles-js {
+          width:97.75%;
+          height:210px;}
+      </style>
+    </body>
+
+      <!--=================================
+        Formulario de busqueda
+      ==================================-->
+    <body>
+      <form>
+        <input type="text" name="search" placeholder="Buscar..">
+      </form>  
+    </body>
+
+    <!--==============================================
+       Galería de imágenes sensible utilizando Flexbox
+     ==============================================-->
+
+<!-- Encabezado -->
+<div class="header">
+  <h1>Ya sabes lo que te podemos ofrecer?</h1>
+  <p class="bg-success">La mejor y mas alta calidad en calzado de todo estilo para ti, 
+    Navega y experimenta con nosotros ahora</p>
+</div>
+
+<!-- Mosaico de imagenes -->
+<div class="row">
+  <div class="column">
+    <a target="_blank" href="NikeZoom.png">
+      <img class="img-responsive" src="NikeZoom.png" class="img-rounded" style="width:100%">
+    </a>
+    <div class="container">
+      <p>Hasta el desmayo podras alcanzar todo tipo de objetivo deportivo que tengas en mente,
+        nosotros podemos hacer parte de este gran proceso, comunicate con nosotros.</p>
+    </div>   
+    <a target="_blank" href="Nikeforce1.png">
+      <img class="img-responsive" src="Nikeforce1.png" class="img-rounded" style="width:100%">
+    </a>
+    <div class="container">
+      <p>Ofrecemos una gran variedad en productos que te pueden hacer alcanzar tu mayor jor rendimiento</p>
+    </div>
+    <a target="_blank" href="AdidasDeerupt1.png">
+      <img class="img-responsive" src="AdidasDeerupt1.png" class="img-rounded" style="width:100%">
+    </a>
+    <div class="container">
+      <p>Podemos asegurarte la mejor experiencia que te puedas imaginar con los productos que estos magnificos
+        calzado te pueden ofrecer, nosotros los tenemos para ti.</p>
+    </div>
+   </div>
+
+  <div class="column">
+    <a target="_blank" href="Running1.0.png">
+      <img class="img-responsive" src="Running1.0.png" class="img-circle" style="width:100%">
+    </a>
+    <div class="container">
+      <p>Las running Estos tenis incorporan un exterior tipo media que se adapta a
+        la forma de tu pie para un ajuste ceñidoy adaptable.
+        La amortiguación receptiva desde la punta hasta el talón brinda comodidad duradera.</p>
+    </div>
+    <a target="_blank" href="Force1.png">
+      <img class="img-responsive" src="Force1.png" class="img-circle" style="width:100%">
+    </a>
+    <div class="container">
+      <p>estos guayos para césped artificial te envuelven para lograr un control total.
+        El exterior sintético imita la forma de tu talón para un ajuste seguro y un cómodo
+        cuello brinda un ajuste tipo media para mayor estabilidad del tobillo.</p>
+    </div>
+    <a target="_blank" href="AdidasDeerupt2.png">
+      <img class="img-responsive" src="AdidasDeerupt2.png" class="img-circle" style="width:100%">
+    </a>
+    <div class="container">
+      <p> Prepárate para conseguir el poder de la superfuerza. Para los seguidores del anime y los apasionados de las
+        zapatillas.</p>
+    </div>
+  </div> 
+  <div class="column">
+    <a target="_blank" href="Adidas700.png">
+      <img class="img-responsive" src="Adidas700.png" class="img-rounded" style="width:100%">
+    </a>
+    <div class="container">
+      <p>Una colaboración de adidas Originals con Pharrell Williams,
+        estos tenis lucen líneas estilizadas e irradian
+        creatividad. Están confeccionados con un exterior en tejido flexible que envuelve el pie.
+      </p>
+    </div>
+    <a target="_blank" href="Airmax97.png">
+      <img class="img-responsive" src="Airmax97.png" class="img-rounded" style="width:100%">
+    </a>
+    <div class="container">
+      <p>Esta zapatilla de running te ofrece un diseño de alto rendimiento con el que batirás tu mejor marca.
+        La parte superior de punto elástico acompaña el movimiento natural del pie en carrera. </p>
+    </div>
+    <a target="_blank" href="AdiPharrel1.png">
+      <img class="img-responsive" src="AdiPharrel1.png" class="img-rounded" style="width:100%">
+    </a>
+    <div class="container">
+      <p>Estos versátiles tenis de running para hombre son ideales para la maquina caminadora o los senderos.
+        Incorporan un exterior de dos capas en malla para una máxima ventilación y un revestimiento estampado
+        para soporte adicional. Cloudfoam supersuave amortig</p>
+    </div>  
+  </div>
+</div>
+
+    <body>
+      <!-- <canvas width="1000" height="500" id="optimus"></canvas> -->
+      <script src="optimus.js"></script>
+      <script src="particlles.js"></script>
+      <script src="particuulas.js"></script>
+      <!-- <script src="prueba.js"></script> -->
+    </body>
+
+        <!--=================================
+         boton animado dentro de la imagen
+        ==================================-->
+
+    <div class="container">
+      <img src="FutbolNike.png" alt="Snow" style="width:100%">
+        <button class="button" style="vertical-align:middle"><span>Comprar</span>
+        </button>
+    </div>
+  
+      <!--=================================
+        Pie de pagina
+      ==================================-->
+      <div class="footer">
+        <p id="rcorners3">Recuerda seguirnos en nuestras redes sociales para mantenerte actualizado.</p>
+      </div>
+  </body>
+</html>
