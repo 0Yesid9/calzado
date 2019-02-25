@@ -72,7 +72,7 @@
        font-size: 15px;
        margin: 5px;
        background-color: white;
-       background-image: url('searchicon.png');
+       /* background-image: url('searchicon.png'); */
        background-position: 10px 10px;
        background-repeat: no-repeat;
        padding: 12px 20px 12px 40px;
@@ -247,42 +247,45 @@
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">HOME</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">CABALLERO <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="optimus2.html" onclick="return preguntar()">Running</a></li>
-          <li><a href="optimus2.html" onclick="return preguntar2()">Training</a></li>
-          <li><a href="optimus2.html" onclick="return preguntar3()">Urbano</a></li>
-        </ul>
-      </li>
-      <li class="dropdpwn"><a class="dropdown-toggle" data-toggle="dropdown" href="#">DAMA <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Running</a></li>
-          <li><a href="#">Training</a></li>
-          <li><a href="#">Urbano</a></li>
-        </ul>
-      </li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">NIÑOS <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Running</a></li>
-          <li><a href="#">Training</a></li>
-          <li><a href="#">Urbano</a></li>
-        </ul>
-      </li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-phone"></span>Instagram</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span>Nosotros</a></li>
-    </ul>
-      <form class="navbar-form navbar-left" action="/action_page.php">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search" name="search">
-        </div>
-        <button type="submit" class="btn btn-default">
-          <i class="glyphicon glyphicon-search"></i>
-        </button>     
-      </form>
+    <div class="collapse navbar-collapse" id="MyNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">HOME</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="caballeros.html">CABALLERO <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="caballeros.html" onclick="return preguntar()">Running</a></li>
+            <li><a href="caballeros.html" onclick="return preguntar2()">Training</a></li>
+            <li><a href="caballeros.html" onclick="return preguntar3()">Urbano</a></li>
+          </ul>
+        </li>
+        <li class="dropdpwn"><a class="dropdown-toggle" data-toggle="dropdown" href="#">DAMA <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="optimus2.html" onclick="return preguntar4()">Running</a></li>
+            <li><a href="optimus2.html" onclick="return preguntar5()">Training</a></li>
+            <li><a href="optimus2.html" onclick="return preguntar6()">Urbano</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">NIÑOS <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="optimus2.html" onclick="return preguntar7()">Running</a></li>
+            <li><a href="optimus2.html" onclick="return preguntar8()">Training</a></li>
+            <li><a href="optimus2.html" onclick="return preguntar9()">Urbano</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://www.instagram.com/opti_regenera/"><span class="glyphicon glyphicon-phone"></span>Instagram</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span>Nosotros</a></li>
+      </ul>
+
+
+      <button class="btn btn-warning navbar-btn navbar-right">
+        <span class="glyphicon glyphicon-bitcoin"></span>Bitcoin
+      </button>
+    </div>
   </div>
 </nav>
 
@@ -400,12 +403,10 @@
   </div>
 </div>
 
-    <body>
-      <!-- <canvas width="1000" height="500" id="optimus"></canvas> -->
-      <script src="optimus.js"></script>
+    <body>      
       <script src="particlles.js"></script>
       <script src="particuulas.js"></script>
-      <!-- <script src="prueba.js"></script> -->
+      <script src="links.js"></script>
     </body>
 
         <!--=================================

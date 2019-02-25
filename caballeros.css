@@ -1,0 +1,114 @@
+/* Estilos de nuestro menú  */
+
+
+/* Agrega un color de fondo oscuro con un poco de transparencia. */
+.navbar {
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+}
+/* Añadir un color gris a todos los enlaces de la barra de navegación */
+.navbar li a, .navbar .navbar-brand {
+    color: #111010 !important;
+}
+/* Sobre la marcha, los enlaces se volverán blancos. */
+.navbar-nav li a:hover {
+    color: rgb(15, 14, 14) !important;
+}
+/* El enlace activo */
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+}
+/* Eliminar el color del borde del botón plegable */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+/* Desplegable */
+.open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+}
+/* Enlaces desplegables*/
+.dropdown-menu li a {
+    color: #000 !important;
+}
+/* Sobre la marcha, los enlaces desplegables se volverán grises. */
+.dropdown-menu li a:hover {
+    background-color: rgb(112, 111, 111) !important;
+}
+
+
+/* Estilos del carrusel */
+ .container {
+     padding: 20px 30px;
+}
+ .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 100%;
+
+}
+ .person:hover {
+    border-color: #f1f1f1;
+}
+ .carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); /* make all photos black and white */
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+}
+ .carousel-caption h3 {
+    color: #fff !important;
+}
+ @media (max-width: 600px) {
+    .carousel-caption {
+        display: none; /* Oculta el texto del carrusel cuando el ancho sea menor que  */
+    }
+}
+
+/* Centrar cabecera */
+.header {
+    text-align: center;
+    padding: 10px;
+    color: rgb(158, 6, 6);
+    background-color: white;
+    border-radius: 6px;
+    margin: 8px;
+}
+
+/* agregar un color de fondo negro y algunos rellenos al pie de pagina */
+.bg-4 {
+    background-color: #2f2f2f;
+    color: #fff;
+    padding: 30px;
+}
+
+/* Color de texto negra en cambio de pagina */
+.bg-5 {
+    color: #2f2f2f;
+}
+
+/* Pie de pagina */
+.footer {
+    background-image: url("fondo.piepag.png");
+    color: #050f09;
+    padding: 3px;
+    text-align: center;
+    margin-top: 10px;
+    border: 3px solid white;
+    font-size: 120%;
+}
+#rcorners3 {
+    border-radius:  15px 15px 15px 15px;
+    background: url(fondo.piepag.png);
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 10px;
+    margin: 3;
+}
+
