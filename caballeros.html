@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,236 +12,242 @@
     <title>Caballeros</title>
 
 </head>
-<body>
-    
 
-<!--==============================================================
-A continuación nuestro Menu con CSS, pocision pegajosa (sticky)
-===============================================================-->
+<body class="hidden">
+    <!-- <div class="lds-facebook"><div></div><div></div><div></div></div>
+    </div>  -->
 
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
+    <!--==============================================================
+    A continuación nuestro Menu con CSS, pocision pegajosa (sticky)
+    ===============================================================-->
 
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">OPTIMUS</a>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">OPTIMUS</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                    <li><a href="index.html">HOME</a>
+                    <li class="active" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="caballeros.html">
+                            CABALLERO <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="caballeros.html" onclick="return preguntar()">Running</a></li>
+                            <li><a href="caballeros.html" onclick="return preguntar2()">Training</a></li>
+                            <li><a href="caballeros.html" onclick="return preguntar3()">Urbano</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdpwn"><a class="dropdown-toggle" data-toggle="dropdown" href="damas.html">DAMA <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="damas.html" onclick="return preguntar4()">Running</a></li>
+                            <li><a href="damas.html" onclick="return preguntar5()">Training</a></li>
+                            <li><a href="damas.html" onclick="return preguntar6()">Urbano</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="niños.html">NIÑOS
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="niños.html" onclick="return preguntar7()">Running</a></li>
+                            <li><a href="niños.html" onclick="return preguntar8()">Training</a></li>
+                            <li><a href="niños.html" onclick="return preguntar9()">Urbano</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://www.instagram.com/opti_regenera/"><span class="glyphicon glyphicon-phone"></span>Instagram</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span>Nosotros</a></li>
+                </ul>
+                <button class="btn btn-warning navbar-btn navbar-right">
+                    <span class="glyphicon glyphicon-bitcoin">Bitcoin</span>
+                </button>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li class="dropdown">
-                <li class="active"><a href="index.html">HOME</a>
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">CABALLERO <span
-                            class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="calzado.html" onclick="return preguntar()">Running</a></li>
-                        <li><a href="calzado.html" onclick="return preguntar2()">Training</a></li>
-                        <li><a href="calzado.html" onclick="return preguntar3()">Urbano</a></li>
-                    </ul>
-                </li>
-                <li class="dropdpwn"><a class="dropdown-toggle" data-toggle="dropdown" href="#">DAMA <span
-                            class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="calzado.html" onclick="return preguntar4()">Running</a></li>
-                        <li><a href="calzado.html" onclick="return preguntar5()">Training</a></li>
-                        <li><a href="calzado.html" onclick="return preguntar6()">Urbano</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">NIÑOS <span
-                            class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="calzado.html" onclick="return preguntar7()">Running</a></li>
-                        <li><a href="calzado.html" onclick="return preguntar8()">Training</a></li>
-                        <li><a href="calzado.html" onclick="return preguntar9()">Urbano</a></li>
-                    </ul>
-                </li>
-                </li>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="https://www.instagram.com/opti_regenera/"><span
-                            class="glyphicon glyphicon-phone"></span>Instagram</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span>Nosotros</a></li>
-            </ul>
-            <button class="btn btn-warning navbar-btn navbar-right">
-                <span class="glyphicon glyphicon-bitcoin">Bitcoin</span>
-            </button>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!--=======================================
+    <!--=======================================
     Nuestro carrusel!
-=======================================-->>
+=======================================-->
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicadores -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0"></li>
-        <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicadores -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0"></li>
+            <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
 
-    <!-- Envoltura para diapositivas -->
-    <div class="carousel-inner" role="listbox">
-        <div class="item">
-            <img class="img-responsive" src="nadal1.jpg" alt="Adidas" width="800" height="300">
-            <div class="carousel-caption">
-                <h3>Adidas</h3>
-                <p>Encontraras los mejores diseños para tus deportes</p>
+        <!-- Envoltura para diapositivas -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item">
+                <img class="img-responsive" src="img/nadal1.jpg" alt="Nike" width="800" height="300">
+                <div class="carousel-caption">
+                    <h3>Nike</h3>
+                    <p>Encontraras los mejores diseños para tus deportes</p>
+                </div>
+            </div>
+
+            <div class="item active">
+                <img class="img-responsive" src="img/abuelo.jpg" alt="Adidas" width="800" height="300">
+                <div class="carousel-caption">
+                    <h3>Adidas</h3>
+                    <p>Te ofrece desde lo más urbano hasta lo más casual para todos los dias</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img class="img-responsive" src="img/reebok3.jpg" alt="Reebok" width="800" height="300">
+                <div class="carousel-caption">
+                    <h3>Reebok</h3>
+                    <p>Con Reebok no dejaras de estar a la moda!</p>
+                </div>
             </div>
         </div>
 
-        <div class="item active">
-            <img class="img-responsive" src="katy2.jpg" alt="Nike" width="800" height="300">
-            <div class="carousel-caption">
-                <h3>Nike</h3>
-                <p>Te ofrece desde lo más urbano hasta lo más casual para todos los dias</p>
-            </div>
-        </div>
-
-        <div class="item">
-            <img class="img-responsive" src="reebok3.jpg" alt="Reebok" width="800" height="300">
-            <div class="carousel-caption">
-                <h3>Reebok</h3>
-                <p>Con Reebok no dejaras de estar a la moda!</p>
-            </div>
-        </div>
+        <!-- Controles de izquierdo y derecho -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
 
-    <!-- Controles de izquierdo y derecho -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
-
-<!--=========================================
+    <!--=========================================
     Galeria para imagenes
 ===========================================-->
 
-<div class="container">
-    <div class="row">
-        <div class="col-sm-3">
-            <div class="panel panel-primary">
-                <div class="panel-heading">Nike roshe 2</div>
-                <div class="panel-body"><img src="nikeroshe2.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-                <div class="panel-footer">Comodidad garantizada en y maximo estilo en tus pies</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Nike roshe 2</div>
+                    <div class="panel-body"><img src="img/nikeroshe2.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                    <div class="panel-footer">Comodidad garantizada en y maximo estilo en tus pies</div>
+                </div>
             </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="panel panel-success">
-                <div class="panel-heading">Nike Airmax 90</div>
-                <div class="panel-body"><img src="nikeairmax.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-                <div class="panel-footer">Comodidad garantizada en y maximo estilo en tus pies
+            <div class="col-sm-3">
+                <div class="panel panel-success">
+                    <div class="panel-heading">Nike Airmax 90</div>
+                    <div class="panel-body"><img src="img/nikeairmax.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                    <div class="panel-footer">Comodidad garantizada en y maximo estilo en tus pies
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Nike LF1</div>
+                    <div class="panel-body"><img src="img/nikelf1.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                    <div class="panel-footer">Comodidad garantizada en y maximo estilo en tus pies</div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="panel panel-success">
+                    <div class="panel-heading">Nike force1</div>
+                    <div class="panel-body"><img src="img/nikejustdoit.jpg" class="img-responsive" style="width:100%"
+                            alt="Image"></div>
+                    <div class="panel-footer">Comodidad garantizada en y maximo estilo en tus pies</div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-3">
-            <div class="panel panel-primary">
-                <div class="panel-heading">Nike LF1</div>
-                <div class="panel-body"><img src="nikelf1.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-                <div class="panel-footer">Comodidad garantizada en y maximo estilo en tus pies</div>
-            </div>
-        </div>
-        <div class="col-sm-3">
-        <div class="panel panel-success">
-                <div class="panel-heading">Nike force1</div>
-                <div class="panel-body"><img src="nikejustdoit.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-                <div class="panel-footer">Comodidad garantizada en y maximo estilo en tus pies</div>
-            </div>
-        </div>
-    </div>
-</div><br>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-3">
-            <div class="panel panel-primary">
-                <div class="panel-heading">Nike react</div>
-                <div class="panel-body"><img src="nike123.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Nike react</div>
+                    <div class="panel-body"><img src="img/nike123.jpg" class="img-responsive" style="width:100%" alt="Image">
+                    </div>
+                    <div class="panel-footer">Comodidad garantizada en y maximo estilo en tus pies</div>
                 </div>
-                <div class="panel-footer">Comodidad garantizada en y maximo estilo en tus pies</div>
             </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="panel panel-success">
-                <div class="panel-heading">Nike EXP X-14</div>
-                <div class="panel-body"><img src="nikeexpx-14.jpg" class="img-responsive" style="width:100%" alt="Image">
+            <div class="col-sm-3">
+                <div class="panel panel-success">
+                    <div class="panel-heading">Nike EXP X-14</div>
+                    <div class="panel-body"><img src="img/nikeexpx-14.jpg" class="img-responsive" style="width:100%"
+                            alt="Image">
+                    </div>
+                    <div class="panel-footer">Comodidad garantizada en y maximo estilo en tus pies</div>
                 </div>
-                <div class="panel-footer">Comodidad garantizada en y maximo estilo en tus pies</div>
             </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="panel panel-primary">
-                <div class="panel-heading">Nike axis</div>
-                <div class="panel-body"><img src="nikeaxis.jpg" class="img-responsive" style="width:100%" alt="Image">
+            <div class="col-sm-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Nike axis</div>
+                    <div class="panel-body"><img src="img/nikeaxis.jpg" class="img-responsive" style="width:100%" alt="Image">
+                    </div>
+                    <div class="panel-footer">Comodidad garantizada en y maximo estilo en tus pies</div>
                 </div>
-                <div class="panel-footer">Comodidad garantizada en y maximo estilo en tus pies</div>
             </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="panel panel-success">
-                <div class="panel-heading">Nike air270</div>
-                <div class="panel-body"><img src="nikeair270.jpg" class="img-responsive" style="width:100%" alt="Image">
+            <div class="col-sm-3">
+                <div class="panel panel-success">
+                    <div class="panel-heading">Nike air270</div>
+                    <div class="panel-body"><img src="img/nikeair270.jpg" class="img-responsive" style="width:100%" alt="Image">
+                    </div>
+                    <div class="panel-footer">Comodidad garantizada en y maximo estilo en tus pies</div>
                 </div>
-                <div class="panel-footer">Comodidad garantizada en y maximo estilo en tus pies</div>
             </div>
         </div>
-    </div>
-</div><br>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-3">
-            <div class="panel panel-primary">
-                <div class="panel-heading">Nike airmax720</div>
-                <div class="panel-body"><img src="nikeairmax720.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Nike airmax720</div>
+                    <div class="panel-body"><img src="img/nikeairmax720.jpg" class="img-responsive" style="width:100%"
+                            alt="Image">
+                    </div>
+                    <div class="panel-footer">Comodidad garantizada en y maximo estilo en tus pies</div>
                 </div>
-                <div class="panel-footer">Comodidad garantizada en y maximo estilo en tus pies</div>
             </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="panel panel-success">
-                <div class="panel-heading">Nike fliknyt racer</div>
-                <div class="panel-body"><img src="nikefliknyt.jpg" class="img-responsive" style="width:100%" alt="Image">
+            <div class="col-sm-3">
+                <div class="panel panel-success">
+                    <div class="panel-heading">Nike fliknyt racer</div>
+                    <div class="panel-body"><img src="img/nikefliknyt.jpg" class="img-responsive" style="width:100%"
+                            alt="Image">
+                    </div>
+                    <div class="panel-footer">Comodidad garantizada en y maximo estilo en tus pies</div>
                 </div>
-                <div class="panel-footer">Comodidad garantizada en y maximo estilo en tus pies</div>
             </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="panel panel-primary">
-                <div class="panel-heading">Nike Force1 en bota</div>
-                <div class="panel-body"><img src="nikeforce1bota.jpg" class="img-responsive" style="width:100%" alt="Image">
+            <div class="col-sm-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Nike Force1 en bota</div>
+                    <div class="panel-body"><img src="img/nikeforce1bota.jpg" class="img-responsive" style="width:100%"
+                            alt="Image">
+                    </div>
+                    <div class="panel-footer">Comodidad garantizada en y maximo estilo en tus pies</div>
                 </div>
-                <div class="panel-footer">Comodidad garantizada en y maximo estilo en tus pies</div>
             </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="panel panel-success">
-                <div class="panel-heading">Nike airmax 97</div>
-                <div class="panel-body"><img src="nikeairmax97.jpg"img-responsive" style="width:100%" alt="Image">
+            <div class="col-sm-3">
+                <div class="panel panel-success">
+                    <div class="panel-heading">Nike airmax 97</div>
+                    <div class="panel-body"><img src="img/nikeairmax97.jpg" img-responsive" style="width:100%" alt="Image">
+                    </div>
+                    <div class="panel-footer">Comodidad garantizada en y maximo estilo en tus pies</div>
                 </div>
-                <div class="panel-footer">Comodidad garantizada en y maximo estilo en tus pies</div>
             </div>
         </div>
-    </div>
-</div><br>
+    </div><br>
 
-<!--====================================================
+    <!--====================================================
     ENLASES PARA CAMBIAR DE PAGINA (SIGUIENTE / ANTERIOR)
 ======================================================-->
 
-<div class="container">
-    <div class="header bg-5">
-    <h2>Navega</h2>
+    <div class="container">
+        <div class="header bg-5">
+            <h2>Navega</h2>
             <p><em>Desplazate para conocer más modelos</em></p>
             <ul class="pager">
                 <li><a href="#">1</a></li>
@@ -251,13 +258,17 @@ A continuación nuestro Menu con CSS, pocision pegajosa (sticky)
                 <li class="next"><a href="#">Siguiente</a></li>
                 <li class="previous"><a href="#">Anterior</a></li>
             </ul>
-   </div>
-</div>
+        </div>
+    </div>
 
-<footer class="container-fluid bg-4 text-center">
-    <p>Visitanos en nuestro instagram <a href="https://www.instagram.com/tveupassion/" class=" glyphicon
+    <footer class="container-fluid bg-4 text-center">
+        <p>Visitanos en nuestro instagram <a href="https://www.instagram.com/tveupassion/" class=" glyphicon
     glyphicon-phone">www.instagram.com/tveupassion/</a></p>
-</footer>
+    </footer>
+
+    <script src="links.js"></script>
+    <script src="jquery.js"></script>
 
 </body>
+
 </html>

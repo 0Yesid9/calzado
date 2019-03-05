@@ -59,7 +59,6 @@
     }
 }
 
-
 /* Agrega un color de fondo oscuro con un poco de transparencia. */
 .navbar {
     margin-bottom: 0;
@@ -108,7 +107,6 @@
     background-color: rgb(112, 111, 111) !important;
 }
 
-
 /* Estilos del carrusel */
 .container {
     padding: 20px 30px;
@@ -156,6 +154,7 @@
     margin: 8px;
 }
 
+
 /* agregar un color de fondo negro y algunos rellenos al pie de pagina */
 .bg-4 {
     background-color: #2f2f2f;
@@ -170,7 +169,7 @@
 
 /* Pie de pagina */
 .footer {
-    background-image: url("img/fondo.piepag.png");
+    background-image: url("fondo.piepag.png");
     color: #050f09;
     padding: 3px;
     text-align: center;
@@ -181,7 +180,7 @@
 
 #rcorners3 {
     border-radius: 15px 15px 15px 15px;
-    background: url(img/fondo.piepag.png);
+    background: url(fondo.piepag.png);
     background-position: left top;
     background-repeat: repeat;
     padding: 10px;
