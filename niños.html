@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <title>Damas</title>
-
+    <title>Niños</title>
+    <link rel="icon" type="image/png" href="https://0yesid9.github.io/calzado/img/fondo.png"/>  
 </head>
 
 <!-- <body class="hidden">
@@ -20,6 +20,8 @@
         <div></div>
     </div>
     </div> -->
+
+
 
 <!--==============================================================
     A continuación nuestro Menu con CSS, pocision pegajosa (sticky)
@@ -239,6 +241,120 @@
         </div>
     </div>
 </div><br>
+
+
+    <!--=========================================
+    Modal botones para pago
+    ===========================================-->
+
+<div class="container" class="row">
+    <h2>Ahora con cryptomonedas</h2>
+    <p>Dinero electronico descentralizado peer to peer, elige tu prferido y haz tus compras desde casa a la velocidad
+        de la luz</p>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-qrcode "></span>
+        Bitcoin cash</button>
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-qrcode "></span>
+        Dash</button>
+    <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal3"><span class="glyphicon glyphicon-qrcode "></span>
+        Bitcoin</button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-dialog-scrollable">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1 class="modal-title">Bitcoin Cash</h1>
+                </div>
+                <div class="modal-body">
+                    <h3>Realiza tus pagos con rapidez</h3>
+                    <p class="posicion">Bitcoin cash es una cryptomoneda que se desarrollo para llevar a cabo pagos
+                        electronicos
+                        peer to peer de manera descentralizada sin custodios y por su capacidad de tamaños de bloques
+                        a una velocidad muy rapida.</p>
+                </div>
+                <img class="img-responsive" src="img/qr.png" class="img-rounded" style="width:100%">
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog modal-dialog-scrollable">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1 class="modal-title">Dash</h1>
+                </div>
+                <div class="modal-body">
+                    <h3>Realiza tus pagos con rapidez</h3>
+                    <p class="posicion">Bitcoin cash es una cryptomoneda que se desarrollo para llevar a cabo pagos
+                        electronicos
+                        peer to peer de manera descentralizada sin custodios y por su capacidad de tamaños de bloques
+                        a una velocidad muy rapida.</p>
+                </div>
+                <img class="img-responsive" src="img/qr.png" class="img-rounded" style="width:100%">
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal3" role="dialog">
+        <div class="modal-dialog modal-dialog-scrollable">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1 class="modal-title">Bitcoin</h1>
+                </div>
+                <div class="modal-body">
+                    <h3>Realiza tus pagos con rapidez</h3>
+                    <p class="posicion">Bitcoin cash es una cryptomoneda que se desarrollo para llevar a cabo pagos
+                        electronicos
+                        peer to peer de manera descentralizada sin custodios y por su capacidad de tamaños de bloques
+                        a una velocidad muy rapida.</p>
+                </div>
+                <img class="img-responsive" src="img/qr.png" class="img-rounded" style="width:100%">
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#myBtn").click(function () {
+            $("#myModal").modal();
+        });
+    });
+    $(document).ready(function () {
+        $("#myBtn2").click(function () {
+            $("#myModal").modal();
+        });
+    });
+    $(document).ready(function () {
+        $("#myBtn3").click(function () {
+            $("#myModal").modal();
+        });
+    });
+</script>
 
 <!--====================================================
     ENLASES PARA CAMBIAR DE PAGINA (SIGUIENTE / ANTERIOR)

@@ -19,7 +19,7 @@
     display: inline-block;
     position: relative;
     width: 64px;
-    height: 64px;
+    height: 64px;   
 }
 
 .lds-facebook div {
@@ -171,7 +171,7 @@
 /* Pie de pagina */
 .footer {
     background-image: url("img/fondo.piepag.png");
-    color: #050f09;
+    color: #060c08;
     padding: 3px;
     text-align: center;
     margin-top: 10px;
@@ -187,3 +187,33 @@
     padding: 10px;
     margin: 3;
 }
+.enlase{
+    cursor: pointer;
+}
+.container{
+    text-align: center;
+}
+
+/* Modal botones para pago */
+
+.container {
+    text-align: center;
+    background-color: #8f8f8f;
+    color: black;
+  
+}
+.modal-header {
+    background-color: #070a08;
+    color: white;
+}
+.modal-title {
+    text-align: left;
+ 
+}
+.close {
+    color: white;
+}
+.posicion{
+    text-align: left;
+}
+
